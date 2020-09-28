@@ -6,3 +6,9 @@ __pycache__
 db.sqlite3
 geckodriver.log
 virtualenv
+db.sqlite3
+geckodriver.log
+geckodriver.log
+virtualenv
+__pycache__
+*.pyc
