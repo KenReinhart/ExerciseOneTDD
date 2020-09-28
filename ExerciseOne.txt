@@ -1,0 +1,17 @@
+ExerciseOne
+run django with
+$ python manage.py runserver
+if you run functional_tests.py before you run django, you will get url err connectionFailure.
+
+to check all existing files use:
+$ ls
+
+to initialised empty Git repo
+$ git init .
+
+how to ignore docs
+$ echo "filename" >> .gitignore
+
+add the rest of the contents of the current folder, "."
+$ git add .
+$ git status
