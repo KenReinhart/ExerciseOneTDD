@@ -1,6 +1,9 @@
+from django.urls import resolve 
 from django.test import TestCase #augmented version of the standard unittest.TestCase.
-#import unittest
-class SmokeTest(TestCase):
+from lists.views import home_page #this should shows err since we dont have home_page in views.py
 
-    def test_bad_maths(self):
-        self.assertEqual(1 + 1, 3)
+class HomePageTest(TestCase):
+
+    def test_root_url_resolves_to_home_page_view(self):
+        found = resolve('/')
+        self.assertEqual(found.func, home_page)

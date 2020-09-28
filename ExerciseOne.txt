@@ -15,3 +15,15 @@ $ echo "filename" >> .gitignore
 add the rest of the contents of the current folder, "."
 $ git add .
 $ git status
+
+dont forget to ignore .pyc files as well.
+$ git rm -r --cached superlists/__pycache__
+$ echo "__pycache__" >> .gitignore
+$ echo "*.pyc" >> .gitignore //ignoring all .pyc files 
+
+how to commit
+$ git add .gitignore
+$git commit
+
+Out First Django App, and our first unit functional_tests
+$ python manage.py startapp lists
