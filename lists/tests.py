@@ -15,5 +15,9 @@ class HomePageTest(TestCase):
         response = home_page(request)
         html = response.content.decode('utf8')
         self.assertTrue(html.startswith('<html>'))
-        self.assertIn('<title>To-Do lists</title>', html)
+        self.assertIn('<title>Exercise One - Static Web Page</title>', html)
+        self.assertIn('<h1 style="text-align: center;">Welcome to unlikely documents</h1>', html)
+        self.assertIn('<p style="padding-left: 30px;">This static web page is meant to fulfill exercise one of PMPL</p>', html)
+        self.assertIn('<p style="padding-left: 30px;">Ken Reinhart 2006507012</p>', html)
         self.assertTrue(html.startswith('</html>'))
+        
